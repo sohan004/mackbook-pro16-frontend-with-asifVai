@@ -3,41 +3,43 @@ import img2 from '../../assets/page3Img/joseph-pearson-b6fKcY3s8VE-unsplash 1.pn
 
 const Page3 = () => {
     return (
-        <div className="max-w-5xl mx-auto px-5 pb-10 relative z-40">
-            <h3 className="text-center text-xl lg:text-3xl font-medium my-16">Please  upload an text version and a audio version of your scipt</h3>
+        <div className="max-w-5xl mx-auto px-5 pb-10 relative z-40 h-full flex flex-col justify-between gap-5">
+            <div>
+                <h3 className="text-center text-xl lg:text-3xl font-medium mt-36 mb-12">Please  upload an text version and a audio version of your scipt</h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
-                <div className="w-full h-[330px] relative">
-                    <img src={img1} className='w-full h-full rounded-md' alt="" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
+                    <div className="w-full h-[330px] relative">
+                        <img src={img1} className='w-full h-full rounded-md' alt="" />
 
-                    <p className='absolute right-2 bottom-2'>.txt</p>
+                        <p className='absolute right-2 bottom-2'>.txt</p>
 
-                    <button className="btn bg-transparent absolute left-4 bottom-4 text-white border hover:bg-transparent border-white rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 37 33" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.05556 19.5556C3.19081 19.5556 4.11111 20.3764 4.11111 21.3889V27.9074C4.11111 28.2856 4.27955 28.6483 4.57938 28.9157C4.87921 29.1831 5.28586 29.3333 5.70988 29.3333H31.2901C31.7141 29.3333 32.1208 29.1831 32.4206 28.9157C32.7205 28.6483 32.8889 28.2856 32.8889 27.9074V21.3889C32.8889 20.3764 33.8092 19.5556 34.9444 19.5556C36.0797 19.5556 37 20.3764 37 21.3889V27.9074C37 29.258 36.3984 30.5534 35.3276 31.5084C34.2568 32.4635 32.8045 33 31.2901 33H5.70988C4.19552 33 2.74319 32.4635 1.67238 31.5084C0.601574 30.5534 0 29.258 0 27.9074V21.3889C0 20.3764 0.920304 19.5556 2.05556 19.5556Z" fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9107 11.9444C8.71344 11.2284 10.015 11.2284 10.8177 11.9444L18.5 18.7962L26.1823 11.9444C26.9851 11.2284 28.2866 11.2284 29.0893 11.9444C29.892 12.6603 29.892 13.8211 29.0893 14.5371L19.9535 22.6852C19.1508 23.4012 17.8492 23.4012 17.0465 22.6852L7.9107 14.5371C7.10796 13.8211 7.10796 12.6603 7.9107 11.9444Z" fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 0C19.6353 0 20.5556 0.820811 20.5556 1.83333V21.3889C20.5556 22.4014 19.6353 23.2222 18.5 23.2222C17.3647 23.2222 16.4444 22.4014 16.4444 21.3889V1.83333C16.4444 0.820811 17.3647 0 18.5 0Z" fill="white" />
-                        </svg>
-                        Upload a Script</button>
-                </div>
+                        <button className="btn bg-transparent absolute left-4 bottom-4 text-white border hover:bg-transparent border-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 37 33" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.05556 19.5556C3.19081 19.5556 4.11111 20.3764 4.11111 21.3889V27.9074C4.11111 28.2856 4.27955 28.6483 4.57938 28.9157C4.87921 29.1831 5.28586 29.3333 5.70988 29.3333H31.2901C31.7141 29.3333 32.1208 29.1831 32.4206 28.9157C32.7205 28.6483 32.8889 28.2856 32.8889 27.9074V21.3889C32.8889 20.3764 33.8092 19.5556 34.9444 19.5556C36.0797 19.5556 37 20.3764 37 21.3889V27.9074C37 29.258 36.3984 30.5534 35.3276 31.5084C34.2568 32.4635 32.8045 33 31.2901 33H5.70988C4.19552 33 2.74319 32.4635 1.67238 31.5084C0.601574 30.5534 0 29.258 0 27.9074V21.3889C0 20.3764 0.920304 19.5556 2.05556 19.5556Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9107 11.9444C8.71344 11.2284 10.015 11.2284 10.8177 11.9444L18.5 18.7962L26.1823 11.9444C26.9851 11.2284 28.2866 11.2284 29.0893 11.9444C29.892 12.6603 29.892 13.8211 29.0893 14.5371L19.9535 22.6852C19.1508 23.4012 17.8492 23.4012 17.0465 22.6852L7.9107 14.5371C7.10796 13.8211 7.10796 12.6603 7.9107 11.9444Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 0C19.6353 0 20.5556 0.820811 20.5556 1.83333V21.3889C20.5556 22.4014 19.6353 23.2222 18.5 23.2222C17.3647 23.2222 16.4444 22.4014 16.4444 21.3889V1.83333C16.4444 0.820811 17.3647 0 18.5 0Z" fill="white" />
+                            </svg>
+                            Upload a Script</button>
+                    </div>
 
-                <div className="w-full h-[330px] relative">
-                    <img src={img2} className='w-full h-full rounded-md' alt="" />
+                    <div className="w-full h-[330px] relative">
+                        <img src={img2} className='w-full h-full rounded-md' alt="" />
 
-                    <p className='absolute right-2 bottom-2'>.mp3</p>
+                        <p className='absolute right-2 bottom-2'>.mp3</p>
 
-                    <button className="btn bg-transparent absolute left-4 bottom-4 text-white border hover:bg-transparent border-white rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 37 33" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.05556 19.5556C3.19081 19.5556 4.11111 20.3764 4.11111 21.3889V27.9074C4.11111 28.2856 4.27955 28.6483 4.57938 28.9157C4.87921 29.1831 5.28586 29.3333 5.70988 29.3333H31.2901C31.7141 29.3333 32.1208 29.1831 32.4206 28.9157C32.7205 28.6483 32.8889 28.2856 32.8889 27.9074V21.3889C32.8889 20.3764 33.8092 19.5556 34.9444 19.5556C36.0797 19.5556 37 20.3764 37 21.3889V27.9074C37 29.258 36.3984 30.5534 35.3276 31.5084C34.2568 32.4635 32.8045 33 31.2901 33H5.70988C4.19552 33 2.74319 32.4635 1.67238 31.5084C0.601574 30.5534 0 29.258 0 27.9074V21.3889C0 20.3764 0.920304 19.5556 2.05556 19.5556Z" fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9107 11.9444C8.71344 11.2284 10.015 11.2284 10.8177 11.9444L18.5 18.7962L26.1823 11.9444C26.9851 11.2284 28.2866 11.2284 29.0893 11.9444C29.892 12.6603 29.892 13.8211 29.0893 14.5371L19.9535 22.6852C19.1508 23.4012 17.8492 23.4012 17.0465 22.6852L7.9107 14.5371C7.10796 13.8211 7.10796 12.6603 7.9107 11.9444Z" fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 0C19.6353 0 20.5556 0.820811 20.5556 1.83333V21.3889C20.5556 22.4014 19.6353 23.2222 18.5 23.2222C17.3647 23.2222 16.4444 22.4014 16.4444 21.3889V1.83333C16.4444 0.820811 17.3647 0 18.5 0Z" fill="white" />
-                        </svg>
-                        Upload an Audio</button>
+                        <button className="btn bg-transparent absolute left-4 bottom-4 text-white border hover:bg-transparent border-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 37 33" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.05556 19.5556C3.19081 19.5556 4.11111 20.3764 4.11111 21.3889V27.9074C4.11111 28.2856 4.27955 28.6483 4.57938 28.9157C4.87921 29.1831 5.28586 29.3333 5.70988 29.3333H31.2901C31.7141 29.3333 32.1208 29.1831 32.4206 28.9157C32.7205 28.6483 32.8889 28.2856 32.8889 27.9074V21.3889C32.8889 20.3764 33.8092 19.5556 34.9444 19.5556C36.0797 19.5556 37 20.3764 37 21.3889V27.9074C37 29.258 36.3984 30.5534 35.3276 31.5084C34.2568 32.4635 32.8045 33 31.2901 33H5.70988C4.19552 33 2.74319 32.4635 1.67238 31.5084C0.601574 30.5534 0 29.258 0 27.9074V21.3889C0 20.3764 0.920304 19.5556 2.05556 19.5556Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9107 11.9444C8.71344 11.2284 10.015 11.2284 10.8177 11.9444L18.5 18.7962L26.1823 11.9444C26.9851 11.2284 28.2866 11.2284 29.0893 11.9444C29.892 12.6603 29.892 13.8211 29.0893 14.5371L19.9535 22.6852C19.1508 23.4012 17.8492 23.4012 17.0465 22.6852L7.9107 14.5371C7.10796 13.8211 7.10796 12.6603 7.9107 11.9444Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 0C19.6353 0 20.5556 0.820811 20.5556 1.83333V21.3889C20.5556 22.4014 19.6353 23.2222 18.5 23.2222C17.3647 23.2222 16.4444 22.4014 16.4444 21.3889V1.83333C16.4444 0.820811 17.3647 0 18.5 0Z" fill="white" />
+                            </svg>
+                            Upload an Audio</button>
+                    </div>
                 </div>
             </div>
 
 
-            <div className='flex gap-4 items-center mt-16'>
+            <div className='flex gap-4 items-center '>
                 <div className='flex-grow flex items-center'>
                     <div className='bg-white p-4 rounded-full bg-opacity-20'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 38 38" fill="none">
