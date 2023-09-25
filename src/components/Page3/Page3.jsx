@@ -49,7 +49,7 @@ const Page3 = () => {
                         </svg>
                     </div>
                     <div className="flex-grow w-full h-3 rounded-l-lg rounded-e-full overflow-hidden bg-opacity-30 bg-white">
-                        <p className='w-[45%] h-full bg-white rounded-l-lg rounded-e-full'></p>
+                        <p className='w-[25%] h-full bg-white rounded-l-lg rounded-e-full'></p>
                     </div>
                 </div>
 

@@ -1,9 +1,41 @@
+import { useState } from "react";
 
 const Page4 = () => {
+    const [selected, setSelected] = useState('Add a custom key word...');
+    const [selected2, setSelected2] = useState('Add a custom key word...');
     return (
         <div className="max-w-5xl mx-auto px-5 pb-10 relative z-40 h-full flex flex-col justify-between gap-5">
             <div>
                 <h3 className="text-center text-xl lg:text-3xl font-medium mt-36 mb-12">Please select keywords that match the most with your script subparts  </h3>
+
+                <div className="flex flex-col lg:flex-row gap-10">
+                    <div className="w-full lg:w-[80%]">
+                        <p className="text-xl lg:text-2xl opacity-50 font-medium">“Aliquam scelerisque hendrerit orci, sit amet suscipit sem” </p>
+                        <div className="mt-4 w-full bg-white rounded-xl bg-opacity-25 ">
+                            <p onClick={() => setSelected('Phasellus')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Phasellus' && 'bg-white bg-opacity-20 text-black'}`}>Phasellus</p>
+                            <p onClick={() => setSelected('Nunc')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Nunc' && 'bg-white bg-opacity-20 text-black'}`}>Nunc</p>
+                            <p onClick={() => setSelected('Pellentesque')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Pellentesque' && 'bg-white bg-opacity-20 text-black'}`}>Pellentesque</p>
+                            <p onClick={() => setSelected('Add a custom key word...')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Add a custom key word...' && 'bg-white bg-opacity-20 text-black'}`}>Add a custom key word...</p>
+                        </div>
+                        <p className="text-xl lg:text-2xl opacity-50 font-medium mt-5">“Aliquam scelerisque hendrerit orci, sit amet suscipit sem” </p>
+                        <div className="mt-4 w-full bg-white rounded-xl bg-opacity-25 ">
+                            <p onClick={() => setSelected2('Phasellus')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Phasellus' && 'bg-white bg-opacity-20 text-black'}`}>Phasellus</p>
+                            <p onClick={() => setSelected2('Nunc')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Nunc' && 'bg-white bg-opacity-20 text-black'}`}>Nunc</p>
+                            <p onClick={() => setSelected2('Pellentesque')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Pellentesque' && 'bg-white bg-opacity-20 text-black'}`}>Pellentesque</p>
+                            <p onClick={() => setSelected2('Add a custom key word...')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Add a custom key word...' && 'bg-white bg-opacity-20 text-black'}`}>Add a custom key word...</p>
+                        </div>
+                    </div>
+
+                    <div className="w-full lg:w-[20%] rounded-xl bg-white h-full bg-opacity-25 p-7 text-center">
+                        <p className="text-lg">Pregression</p>
+                        <div className="mt-4 relative w-full h-[275px] bg-white rounded-xl bg-opacity-25 flex justify-center items-end">
+                            <p className="text-2xl font-medium text-black absolute text-center top-2/4 -translate-y-2/4">11%</p>
+
+                            <p className="bg-white w-full h-[11%] rounded-2xl "></p>
+                        </div>
+                    </div>
+
+                </div>
 
 
             </div>
@@ -12,10 +44,8 @@ const Page4 = () => {
             <div className='flex gap-4 items-center '>
                 <div className='flex-grow flex items-center'>
                     <div className='bg-white p-4 rounded-full bg-opacity-20'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 38 38" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11111 22.5185C3.27705 22.5185 4.22222 23.4637 4.22222 24.6296V32.1358C4.22222 32.5713 4.39522 32.9889 4.70315 33.2969C5.01108 33.6048 5.42872 33.7778 5.8642 33.7778H32.1358C32.5713 33.7778 32.9889 33.6048 33.2969 33.2969C33.6048 32.9889 33.7778 32.5713 33.7778 32.1358V24.6296C33.7778 23.4637 34.723 22.5185 35.8889 22.5185C37.0548 22.5185 38 23.4637 38 24.6296V32.1358C38 33.6911 37.3822 35.1827 36.2824 36.2824C35.1827 37.3822 33.6911 38 32.1358 38H5.8642C4.30892 38 2.81733 37.3822 1.71758 36.2824C0.617833 35.1827 0 33.6911 0 32.1358V24.6296C0 23.4637 0.945177 22.5185 2.11111 22.5185Z" fill="#BDB4BA" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.1245 13.7541C8.94894 12.9297 10.2856 12.9297 11.1101 13.7541L19 21.6441L26.8899 13.7541C27.7144 12.9297 29.0511 12.9297 29.8755 13.7541C30.6999 14.5786 30.6999 15.9153 29.8755 16.7397L20.4928 26.1224C19.6683 26.9468 18.3317 26.9468 17.5072 26.1224L8.1245 16.7397C7.30006 15.9153 7.30006 14.5786 8.1245 13.7541Z" fill="#BDB4BA" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0C20.1659 0 21.1111 0.945177 21.1111 2.11111V24.6296C21.1111 25.7956 20.1659 26.7407 19 26.7407C17.8341 26.7407 16.8889 25.7956 16.8889 24.6296V2.11111C16.8889 0.945177 17.8341 0 19 0Z" fill="#BDB4BA" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 41" fill="none">
+                            <path d="M20.625 0H4.125C1.85625 0 0.0206255 1.845 0.0206255 4.1L0 36.9C0 39.155 1.83562 41 4.10437 41H28.875C31.1438 41 33 39.155 33 36.9V12.3L20.625 0ZM24.75 32.8H8.25V28.7H24.75V32.8ZM24.75 24.6H8.25V20.5H24.75V24.6ZM18.5625 14.35V3.075L29.9063 14.35H18.5625Z" fill="#BDB4BA" />
                         </svg>
                     </div>
                     <div className="flex-grow w-full h-3 rounded-l-lg rounded-e-full overflow-hidden bg-opacity-30 bg-white">
