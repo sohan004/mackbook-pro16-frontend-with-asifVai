@@ -6,6 +6,7 @@ import Page4 from "../Page4/Page4"
 import Page5 from "../Page5/Page5"
 import Page6 from "../Page6/Page6"
 import Page7 from "../Page7/Page7"
+import Page8 from "../Page8/Page8"
 
 const routing = () => {
     const router = [
@@ -41,6 +42,10 @@ const routing = () => {
                 {
                     path: "/page-7",
                     element: <Page7></Page7>
+                },
+                {
+                    path: "/page-8",
+                    element: <Page8></Page8>
                 },
 
             ]
