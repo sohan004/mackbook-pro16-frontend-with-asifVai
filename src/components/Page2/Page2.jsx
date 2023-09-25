@@ -14,7 +14,7 @@ const Page2 = () => {
             <div className=" relative z-30 text-center px-5 pb-10" >
                 <div className="max-w-[800px] mx-auto">
 
-                    <h1 className="text-5xl md:text-[60px] text-center header-main-text font-medium bg-clip-text leading-[60px]  md:leading-[90px] mt-[125px]">Welcome in SmartEdit</h1>
+                    <h1 className="text-5xl md:text-[60px] text-center header-main-text font-medium bg-clip-text leading-[60px]  md:leading-[90px] pt-[125px]">Welcome in SmartEdit</h1>
 
                     <p className="text-center font-semibold text-lg md:text-[22px] text-[rgba(255, 255, 255, 0.81)] leading-7 lg:leading-9 mt-[30px]">Discover the next generation of video editing where professional grade content meets unparalleled simplicity. Thanks to an AI driving, craft stunning videos in just a seven steps, elevating your storytelling to cinematic heights. No expertise required, just your vision.</p>
                 </div>

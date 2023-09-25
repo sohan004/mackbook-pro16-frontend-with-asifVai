@@ -1,7 +1,36 @@
+import { useEffect, useState } from "react";
 
 const Nav = () => {
+
+    const [bgColor, setBgColor] = useState(false); // Initial background color
+
+    // when i scroll down the page the background color will change to black
+    // when i scroll up the page the background color will change to white
+    //give the code
+
+
+    useEffect(() => {
+        // Function to handle scrolling
+        const handleScroll = () => {
+            // Check the scroll position
+            if (window.scrollY > 0) {
+                setBgColor(true); // Change background color to black when scrolled down
+            } else {
+                setBgColor(false); // Change background color to white when at the top
+            }
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="border-b-[1px] fixed top-0 w-full z-50">
+        <div className={`border-b-[1px] fixed top-0 w-full z-50 ${bgColor && 'bg-black bg-opacity-80'}`}>
             <div className="px-5 pt-7 pb-5 max-w-[1270px] mx-auto flex items-center justify-between relative z-30">
                 <h1 className="text-[18px] font-extrabold">SmartEdit.</h1>
 

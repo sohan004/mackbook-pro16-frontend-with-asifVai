@@ -19,7 +19,7 @@ const Page8 = () => {
                             </div>
                         </div>
 
-                        <div className='mt-8 flex justify-between'>
+                        <div className='mt-8 flex flex-col lg:flex-row gap-2 lg:justify-between'>
                             <p className='flex justify-center items-center gap-2 text-lg border border-white rounded-full px-4 py-1'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 43 42" fill="none">
                                     <g clip-path="url(#clip0_58_12)">
