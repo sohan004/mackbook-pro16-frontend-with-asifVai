@@ -3,6 +3,7 @@ import Home from "../Home/Home"
 import Page2 from "../Page2/Page2"
 import Page3 from "../Page3/Page3"
 import Page4 from "../Page4/Page4"
+import Page5 from "../Page5/Page5"
 
 const routing = () => {
     const router = [
@@ -26,6 +27,10 @@ const routing = () => {
                 {
                     path: "/page-4",
                     element: <Page4></Page4>
+                },
+                {
+                    path: "/page-5",
+                    element: <Page5></Page5>
                 },
 
             ]

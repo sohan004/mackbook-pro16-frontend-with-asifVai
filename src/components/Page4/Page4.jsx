@@ -11,14 +11,14 @@ const Page4 = () => {
                 <div className="flex flex-col lg:flex-row gap-10">
                     <div className="w-full lg:w-[80%]">
                         <p className="text-xl lg:text-2xl opacity-50 font-medium">“Aliquam scelerisque hendrerit orci, sit amet suscipit sem” </p>
-                        <div className="mt-4 w-full bg-white rounded-xl bg-opacity-25 ">
+                        <div className="mt-4 w-full bg-white rounded-xl bg-opacity-20 ">
                             <p onClick={() => setSelected('Phasellus')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Phasellus' && 'bg-white bg-opacity-20 text-black'}`}>Phasellus</p>
                             <p onClick={() => setSelected('Nunc')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Nunc' && 'bg-white bg-opacity-20 text-black'}`}>Nunc</p>
                             <p onClick={() => setSelected('Pellentesque')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Pellentesque' && 'bg-white bg-opacity-20 text-black'}`}>Pellentesque</p>
                             <p onClick={() => setSelected('Add a custom key word...')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected == 'Add a custom key word...' && 'bg-white bg-opacity-20 text-black'}`}>Add a custom key word...</p>
                         </div>
                         <p className="text-xl lg:text-2xl opacity-50 font-medium mt-5">“Aliquam scelerisque hendrerit orci, sit amet suscipit sem” </p>
-                        <div className="mt-4 w-full bg-white rounded-xl bg-opacity-25 ">
+                        <div className="mt-4 w-full bg-white rounded-xl bg-opacity-20 ">
                             <p onClick={() => setSelected2('Phasellus')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Phasellus' && 'bg-white bg-opacity-20 text-black'}`}>Phasellus</p>
                             <p onClick={() => setSelected2('Nunc')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Nunc' && 'bg-white bg-opacity-20 text-black'}`}>Nunc</p>
                             <p onClick={() => setSelected2('Pellentesque')} className={`px-6 py-1 cursor-pointer rounded-xl font-medium ${selected2 == 'Pellentesque' && 'bg-white bg-opacity-20 text-black'}`}>Pellentesque</p>
@@ -26,9 +26,9 @@ const Page4 = () => {
                         </div>
                     </div>
 
-                    <div className="w-full lg:w-[20%] rounded-xl bg-white h-full bg-opacity-25 p-7 text-center">
+                    <div className="w-full lg:w-[20%] rounded-xl bg-white h-full bg-opacity-20 p-7 text-center">
                         <p className="text-lg">Pregression</p>
-                        <div className="mt-4 relative w-full h-[275px] bg-white rounded-xl bg-opacity-25 flex justify-center items-end">
+                        <div className="mt-4 relative w-full h-[275px] bg-white rounded-xl bg-opacity-20 flex justify-center items-end">
                             <p className="text-2xl font-medium text-black absolute text-center top-2/4 -translate-y-2/4">11%</p>
 
                             <p className="bg-white w-full h-[11%] rounded-2xl "></p>
