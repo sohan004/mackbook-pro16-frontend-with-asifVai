@@ -7,16 +7,18 @@ import Nav from "./components/Nav/Nav";
 
 const App = () => {
   return (
-    <div style={{ background: 'linear-gradient(0deg, rgba(69,8,74,1) 0%, rgba(1,1,1,1) 100%)' }} className=" w-full text-white relative">
+    <div style={{ background: 'linear-gradient(0deg, rgba(69,8,74,1) 0%, rgba(1,1,1,1) 100%)' }}>
+      <div  className="h-screen  overflow-hidden overflow-y-auto w-full text-white relative">
 
-      <img src={img2} className="fixed z-20 bottom-0 left-0" alt="" />
-      <img src={img1} className="fixed z-10 bottom-0 left-0" alt="" />
-      <img src={img4} className="fixed z-10 bottom-0 right-0" alt="" />
-      <img src={img3} className="fixed z-20 bottom-0 right-0" alt="" />
+        <img src={img2} className="fixed z-20 bottom-0 left-0" alt="" />
+        <img src={img1} className="fixed z-10 bottom-0 left-0" alt="" />
+        <img src={img4} className="fixed z-10 bottom-0 right-0" alt="" />
+        <img src={img3} className="fixed z-20 bottom-0 right-0" alt="" />
 
-      <Nav></Nav>
-      <Outlet></Outlet>
+        <Nav></Nav>
+        <Outlet></Outlet>
 
+      </div>
     </div>
   );
 };
