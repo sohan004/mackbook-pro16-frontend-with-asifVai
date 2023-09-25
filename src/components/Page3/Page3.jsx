@@ -48,8 +48,8 @@ const Page3 = () => {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0C20.1659 0 21.1111 0.945177 21.1111 2.11111V24.6296C21.1111 25.7956 20.1659 26.7407 19 26.7407C17.8341 26.7407 16.8889 25.7956 16.8889 24.6296V2.11111C16.8889 0.945177 17.8341 0 19 0Z" fill="#BDB4BA" />
                         </svg>
                     </div>
-                    <div className="flex-grow w-full h-3 rounded-full bg-opacity-30 bg-white">
-                        <p className='w-[45%] h-full bg-white rounded-full'></p>
+                    <div className="flex-grow w-full h-3 rounded-l-lg rounded-e-full overflow-hidden bg-opacity-30 bg-white">
+                        <p className='w-[45%] h-full bg-white rounded-l-lg rounded-e-full'></p>
                     </div>
                 </div>
 
