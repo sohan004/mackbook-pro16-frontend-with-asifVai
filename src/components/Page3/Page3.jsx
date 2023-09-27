@@ -5,7 +5,7 @@ const Page3 = () => {
     return (
         <div className="max-w-5xl mx-auto px-5 pb-10 relative z-40 h-full flex flex-col justify-between gap-5">
             <div>
-                <h3 className="text-center text-xl lg:text-3xl font-medium mt-36 mb-12">Please  upload an text version and a audio version of your scipt</h3>
+                <h3 className="text-center text-xl lg:text-3xl font-medium mt-36 mb-12">Please, upload a text format version and an audio format version of your script.</h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
                     <div className="w-full h-[330px] relative">

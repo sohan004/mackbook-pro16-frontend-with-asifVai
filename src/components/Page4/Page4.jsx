@@ -27,7 +27,7 @@ const Page4 = () => {
                     </div>
 
                     <div className="w-full lg:w-[20%] rounded-xl bg-white h-full bg-opacity-20 p-7 text-center">
-                        <p className="text-lg">Pregression</p>
+                        <p className="text-lg">Progression</p>
                         <div className="mt-4 relative w-full h-[275px] bg-white rounded-xl bg-opacity-20 flex justify-center items-end">
                             <p className="text-2xl font-medium text-black absolute text-center top-2/4 -translate-y-2/4">11%</p>
 
