@@ -30,7 +30,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className={`border-b-[1px] bg-[#0D020D] fixed top-0 w-full z-50 ${bgColor && 'bg-black bg-opacity-80'}`}>
+        <div className={`border-b-[1px] backdrop-blur fixed top-0 w-full z-50 ${bgColor && 'bg-black bg-opacity-80'}`}>
             <div className="px-5 pt-7 pb-5 max-w-[1270px] mx-auto flex items-center justify-between relative z-30">
                 <h1 className="text-[18px] font-extrabold">SmartEdit.</h1>
 

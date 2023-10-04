@@ -8,10 +8,10 @@ import img5 from '../../assets/page2Icon/Visual Effects.png'
 
 const Page6 = () => {
     return (
-        <div className="max-w-5xl mx-auto px-5 pb-10 relative z-40 h-full flex flex-col justify-between gap-5">
-            <div>
+        <div className="max-w-5xl mx-auto px-5 pb-10 relative z-40 h-full flex flex-col  gap-5">
+            <div className='flex-grow flex justify-center items-center'>
 
-                <div className="flex flex-col mt-36 lg:flex-row gap-7">
+                <div className="flex flex-col lg:mt-28 mt-16 lg:flex-row gap-7">
                     <div className='w-full lg:w-[70%] flex  bg-white rounded-xl bg-opacity-20  px-3 py-4'>
                         <div className='flex flex-col items-center px-2'>
                             <p className='text-cente text-sm opacity-50 mt-2'>Track</p>
